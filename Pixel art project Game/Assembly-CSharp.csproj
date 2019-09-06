@@ -53,50 +53,50 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Blockers.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\FireBall.cs" />
-     <Compile Include="Assets\Scripts\FireBallCanon.cs" />
-     <Compile Include="Assets\Scripts\Gate.cs" />
      <Compile Include="Assets\Scripts\LeverManager.cs" />
-     <Compile Include="Assets\Scripts\OneWayPlatform.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\ShakyCamScripts.cs" />
+     <Compile Include="Assets\Scripts\WorldElement\Blockers.cs" />
+     <Compile Include="Assets\Scripts\WorldElement\Button.cs" />
+     <Compile Include="Assets\Scripts\WorldElement\FireBall.cs" />
+     <Compile Include="Assets\Scripts\WorldElement\FireBallCanon.cs" />
+     <Compile Include="Assets\Scripts\WorldElement\Gate.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Users/kevin/UnityProjects/2019.3.0a6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

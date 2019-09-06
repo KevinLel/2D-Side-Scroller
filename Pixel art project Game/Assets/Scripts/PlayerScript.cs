@@ -33,10 +33,10 @@ public class PlayerScript : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
     private bool Left, Right, isOnLadder, isOnColliderLadder; 
-
     private int ForceBackValue = 5; 
-
     public ShakyCamScripts CameraShake;
+    public float FallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
 
 
     
@@ -111,7 +111,10 @@ public class PlayerScript : MonoBehaviour
             isAerial = true; 
         }
         if(rb.velocity.y < 0){
-            rb.AddForce(new Vector2(rb.velocity.x, -5f), ForceMode2D.Force);
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (FallMultiplier - 1) * Time.deltaTime;
+        }
+        else if(rb.velocity.y > 0 && !Input.GetButton("Jump")){
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
     void MagicRegen(){

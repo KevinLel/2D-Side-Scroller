@@ -66,10 +66,10 @@
      <Compile Include="Assets\2d-extras-master\Runtime\Tiles\WeightedRandomTile\WeightedRandomTile.cs" />
      <None Include="Assets\2d-extras-master\Runtime\Brushes\TintedTilemap.shader" />
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/kevin/OneDrive/Bureau/Pixel art project Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/kevin/OneDrive/Bureau/2D-Side-Scroller/Pixel art project Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Users/kevin/UnityProjects/2019.3.0a6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
