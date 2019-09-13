@@ -18,12 +18,10 @@ public class PlayerScript : MonoBehaviour
 
 
     //Gestion des Inputs
-    public float XAxisValue, YAxisValue;
-    private bool Jump;
-    private bool Action;
-    private bool Menu;
-    private bool Shoot;
-    private bool Inventory;
+    public float YAxisValue;
+    public bool Jump;
+    public bool Action;
+    public bool Attack;
     
     //Component player
     private Rigidbody2D rb;
@@ -37,7 +35,9 @@ public class PlayerScript : MonoBehaviour
     public ShakyCamScripts CameraShake;
     public float FallMultiplier = 2.5f;
     public float lowJumpMultiplier = 2f;
+    public Joystick joystick;
 
+    public GameObject AndroidInputManagerGameObject; 
 
     
 
@@ -59,53 +59,17 @@ public class PlayerScript : MonoBehaviour
         PlayerJump(); 
     }
     void InputManager(){
-        //Gestion des Axes
-        XAxisValue = Input.GetAxis("Horizontal");
-        YAxisValue = Input.GetAxis("Vertical");
-        //On appuie sur le bouton
-        if(Input.GetButtonDown("Jump")){
-            Jump = true;
-        }
-        else{Jump = false;}
-        if(Input.GetButtonDown("Action")){
-            Action = true;
-        }
-        if(Input.GetButtonDown("Menu")){
-            Menu = true;
-        }
-        if(Input.GetButtonDown("Shoot")){
-            Shoot = true;
-        }
-        if(Input.GetButtonDown("Inventory")){
-            Jump = true;
-        }
-        //On relache le bouton
-        if(Input.GetButtonUp("Jump")){
-            Jump = false;
-        }
-        if(Input.GetButtonUp("Action")){
-            Action = false;
-        }
-        if(Input.GetButtonUp("Menu")){
-            Menu = false;
-        }
-        if(Input.GetButtonUp("Shoot")){
-            Shoot = false;
-        }
-        if(Input.GetButtonUp("Inventory")){
-            Jump = false;
-        }
-    
 
+        YAxisValue = Input.GetAxis("Vertical");
     }
     void FixedUpdate(){
         InputManager();
     }
     void Movement(){
-        rb.velocity = new Vector2(XAxisValue * movementSpeed, rb.velocity.y);  
+        rb.velocity = new Vector2(joystick.Horizontal * movementSpeed, rb.velocity.y);  
     }
     void PlayerJump(){
-        if(Input.GetButtonDown("Jump") && isGrounded){
+        if(Jump && isGrounded){
             rb.velocity = Vector2.up * JumpHigh;
             anim.Play("Jump");
             isAerial = true; 
@@ -113,7 +77,7 @@ public class PlayerScript : MonoBehaviour
         if(rb.velocity.y < 0){
             rb.velocity += Vector2.up * Physics2D.gravity.y * (FallMultiplier - 1) * Time.deltaTime;
         }
-        else if(rb.velocity.y > 0 && !Input.GetButton("Jump")){
+        else if(rb.velocity.y > 0 && !Jump){
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
@@ -125,21 +89,21 @@ public class PlayerScript : MonoBehaviour
     }
     void HealthRegen(){}
     void Animation(){
-        if(XAxisValue != 0 && isGrounded){ //Declenchement de l'animation de marche
+        if(joystick.Horizontal != 0 && isGrounded){ //Declenchement de l'animation de marche
             anim.Play("Walk");
         }
-        else if(XAxisValue == 0 && isGrounded){
+        else if(joystick.Horizontal == 0 && isGrounded){
                 anim.Play("Idle");
         }
         if(!isGrounded){
 
         }
-        if(XAxisValue > 0){
+        if(joystick.Horizontal > 0){
             gameObject.transform.localScale = new Vector3(1,1,1);
             Left = false;
             Right = true;
         }
-        else if(XAxisValue<0){
+        else if(joystick.Horizontal<0){
             gameObject.transform.localScale = new Vector3(-1,1,1);
             Left = true;
             Right = false;
