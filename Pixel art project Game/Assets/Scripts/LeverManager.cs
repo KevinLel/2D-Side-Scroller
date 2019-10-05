@@ -9,17 +9,20 @@ public class LeverManager : MonoBehaviour
     private bool isPlayerEnterCollider; 
 
     public Sprite ActivatedLeverSprite, DesactivateLeverSprite;
+
+    private GameObject ActionButton;
+    private bool ActionButtonState; 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ActionButton = GameObject.Find("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        print(state);
-        if(isPlayerEnterCollider && Input.GetButtonDown("Action")){
+        ActionButtonState = ActionButton.GetComponent<PlayerScript>().Action;
+        if(isPlayerEnterCollider && ActionButtonState){
             state = !state;
         }
         if(state){

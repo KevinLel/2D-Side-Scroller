@@ -51,7 +51,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6124292506269952817, guid: 29ba91b15dca13d478022c3e409c6cf5,
+  m_Sprite: {fileID: 2705322941891871479, guid: 08bdecabe79fe5e41ae01baf4173d771,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,9 +97,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  ActivatedLeverSprite: {fileID: -6124292506269952817, guid: 29ba91b15dca13d478022c3e409c6cf5,
+  ActivatedLeverSprite: {fileID: 2705322941891871479, guid: 08bdecabe79fe5e41ae01baf4173d771,
     type: 3}
-  DesactivateLeverSprite: {fileID: 2281642300084873796, guid: 29ba91b15dca13d478022c3e409c6cf5,
+  DesactivateLeverSprite: {fileID: -2065281595951188508, guid: 08bdecabe79fe5e41ae01baf4173d771,
     type: 3}
 --- !u!61 &5448848283228289016
 BoxCollider2D:

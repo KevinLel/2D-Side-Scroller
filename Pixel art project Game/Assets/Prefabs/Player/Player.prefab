@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,8 +121,10 @@ MonoBehaviour:
   movementSpeed: 6
   JumpHigh: 7
   JumpCounter: 0
-  XAxisValue: 0
   YAxisValue: 0
+  Jump: 0
+  Action: 0
+  Attack: 0
   feetPos: {fileID: 4968948406848422933}
   checkRadius: 0.3
   whatIsGround:
@@ -131,6 +133,8 @@ MonoBehaviour:
   CameraShake: {fileID: 0}
   FallMultiplier: 2.5
   lowJumpMultiplier: 2
+  joystick: {fileID: 0}
+  AndroidInputManagerGameObject: {fileID: 0}
 --- !u!50 &4968948406104490294
 Rigidbody2D:
   serializedVersion: 4

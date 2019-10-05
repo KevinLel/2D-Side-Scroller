@@ -10,10 +10,12 @@ public class InputPointer : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     public void Start(){
         Player = GameObject.Find("Player");
     }
+    public void Update(){
+        Action = false; 
+    }
     public void OnPointerDown (PointerEventData eventData) 
      {
          if(Up){
-            print("test");
             Player.GetComponent<PlayerScript>().Jump = true;
         }
         if(Action){
@@ -26,7 +28,6 @@ public class InputPointer : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
      public void OnPointerUp (PointerEventData eventData) 
      {
          if(Up){
-            print("DEPUSH");
             Player.GetComponent<PlayerScript>().Jump = false;
         }
         if(Action){

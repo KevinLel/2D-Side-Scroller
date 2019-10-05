@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: LampLight
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -6661038583947570276, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
-  - {fileID: -4525405223140904306, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
-  - {fileID: -839155727592211303, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
-  - {fileID: 7247052064416325352, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
-  - {fileID: 7567346031029406142, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
-  - {fileID: 2577138881518176929, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
-  - {fileID: -8564038359199955529, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
-  - {fileID: -2077447341074305568, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
-  - {fileID: 8897406024080798487, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
+  - {fileID: -272743356793176441, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
+  - {fileID: -8164667750322606292, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
+  - {fileID: 8412353830916857978, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
+  - {fileID: 1927307858701620234, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
+  - {fileID: 1427914715779213002, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
+  - {fileID: -1003286448661138045, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
+  - {fileID: 4675411908326548207, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
+  - {fileID: 373827362037119910, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
+  - {fileID: 6731785714039884401, guid: 08bdecabe79fe5e41ae01baf4173d771, type: 3}
   m_MinSpeed: 6
   m_MaxSpeed: 6
   m_AnimationStartTime: 0
